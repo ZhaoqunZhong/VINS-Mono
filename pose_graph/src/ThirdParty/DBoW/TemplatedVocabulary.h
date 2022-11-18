@@ -563,7 +563,7 @@ void TemplatedVocabulary<TDescriptor,F>::create(
 		(int)((pow((double)m_k, (double)m_L + 1) - 1)/(m_k - 1));
 
   m_nodes.reserve(expected_nodes); // avoid allocations when creating the tree
-  
+  std::cout << "**********";
   
   std::vector<pDescriptor> features;
   getFeatures(training_features, features);

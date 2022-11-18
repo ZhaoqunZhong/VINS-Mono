@@ -521,10 +521,12 @@ template<class T>
 inline void TemplatedDatabase<TDescriptor, F>::setVocabulary
   (const T& voc, bool use_di, int di_levels)
 {
+
   m_use_di = use_di;
   m_dilevels = di_levels;
   delete m_voc;
   m_voc = new T(voc);
+  
   clear();
 }
 

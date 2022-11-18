@@ -23,6 +23,8 @@ include_directories(
 
 add_executable(benchmark_publisher
     src/benchmark_publisher_node.cpp
+    src/alignment/AlignTrajectory.cpp
+    src/alignment/AlignUtils.cpp
     )
 
 target_link_libraries(benchmark_publisher ${catkin_LIBRARIES})
